@@ -12,7 +12,7 @@ config = {
  'url': 'http://pypi.python.org/pypi/python-modargs',
  'download_url': 'http://pypi.python.org/pypi/python-modargs',
  'author_email': 'zedshaw@zedshaw.com',
- 'version': '1.7',
+ 'version': '1.8',
  'packages': ['modargs'],
  'name': 'python-modargs'
 }

@@ -1,6 +1,6 @@
 Metadata-Version: 1.0
 Name: python-modargs
-Version: 1.7
+Version: 1.8
 Summary: modargs is a simple command line argument parsing library that infers arguments from functions in a module
 Home-page: http://pypi.python.org/pypi/python-modargs
 Author: Zed A. Shaw
