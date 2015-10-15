@@ -466,7 +466,7 @@ def help_text(prog, mod, default_command=None, on=False):
 
             text.append(arg_help_text + "\n")
 
-        if kwdocs.has_key('kwargs'):
+        if 'kwargs' in kwdocs:
             text.append("%sKeyword Arguments:\n" % (leading_spaces))
             text.append("%s%s\n\n" % (leading_spaces*2, kwdocs['kwargs']))
 
