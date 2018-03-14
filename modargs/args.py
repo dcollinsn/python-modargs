@@ -20,7 +20,7 @@ Here's an example from modargs tests::
    def test_command(port=8825, host='127.0.0.1', debug=1, sender=None, to=None,
                  subject=None, body=None, file=False):
 
-You can see this has subject, body, sender, and to as required options (they 
+You can see this has subject, body, sender, and to as required options (they
 are None), and the rest have some default value.
 
 With this the argument parser will parse the user's given arguments, and then
@@ -87,7 +87,7 @@ SCANNER = re.Scanner([
 
 def match(tokens, of_type = None):
     """
-    Responsible for taking a token off and processing it, ensuring it is 
+    Responsible for taking a token off and processing it, ensuring it is
     of the correct type.  If of_type is None (the default) then you are
     asking for anything.
     """
@@ -96,7 +96,7 @@ def match(tokens, of_type = None):
         if not peek(tokens, of_type):
             if of_type == 'option':
                 raise ArgumentError("Expecting an option, not a %s" % tokens[0][0])
-            raise ArgumentError("Expecting '%s' type of argument not %s in tokens: %r.  Read the help." % 
+            raise ArgumentError("Expecting '%s' type of argument not %s in tokens: %r.  Read the help." %
                                (of_type, tokens[0][0], tokens))
 
     # take the token off the front
@@ -121,7 +121,7 @@ def trailing_production(data, tokens):
     del tokens[:]
 
 def option_production(data, tokens):
-    """The Option production, used for -- or - options.  The number of - aren't 
+    """The Option production, used for -- or - options.  The number of - aren't
     important.  It will handle either individual options, or paired options."""
     if peek(tokens, 'trailing'):
         # this means the rest are trailing arguments, collect them up
@@ -186,7 +186,7 @@ def parse(argv):
 
         command, options = args.parse(sys.argv[1:])
 
-    and if `command==None` then it was an option style, if not then it's a command 
+    and if `command==None` then it was an option style, if not then it's a command
     to deal with.
     """
     tokens = tokenize(argv)
